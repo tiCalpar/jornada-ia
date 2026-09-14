@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grill Me — Jornada de IA do Grupo Calpar</title>
+  <meta name="description" content="Baixe o Grill Me e use com ChatGPT, Claude ou Gemini para organizar ideias e pedir soluções para a TI." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-top: #1a3a2f;
+      --bg-mid: #245544;
+      --bg-bottom: #0f241c;
+      --gold: #e4b84a;
+      --gold-soft: #f3d78a;
+      --cream: #f7f1e3;
+      --text: #f4efe4;
+      --muted: rgba(244, 239, 228, 0.78);
+      --btn: #e4b84a;
+      --btn-text: #1a2a20;
+      --btn-hover: #f0c75c;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      font-family: "Manrope", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(ellipse 80% 50% at 70% 0%, rgba(228, 184, 74, 0.18), transparent 55%),
+        radial-gradient(ellipse 60% 40% at 10% 90%, rgba(60, 120, 90, 0.35), transparent 50%),
+        linear-gradient(165deg, var(--bg-top), var(--bg-mid) 45%, var(--bg-bottom));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.25rem 3rem;
+    }
+
+    main {
+      width: min(34rem, 100%);
+      text-align: center;
+    }
+
+    .eyebrow {
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold-soft);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-family: "Newsreader", Georgia, serif;
+      font-size: clamp(3rem, 10vw, 4.25rem);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+
+    .lead {
+      font-size: 1.125rem;
+      line-height: 1.55;
+      color: var(--muted);
+      margin-bottom: 2rem;
+      max-width: 28rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .download {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.65rem;
+      width: min(100%, 22rem);
+      min-height: 3.75rem;
+      padding: 0.95rem 1.5rem;
+      border: none;
+      border-radius: 0.85rem;
+      background: var(--btn);
+      color: var(--btn-text);
+      font-family: inherit;
+      font-size: 1.15rem;
+      font-weight: 800;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+      transition: background 0.15s ease, transform 0.15s ease;
+    }
+
+    .download:hover,
+    .download:focus-visible {
+      background: var(--btn-hover);
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    .download:active {
+      transform: translateY(0);
+    }
+
+    .hint {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .steps {
+      margin-top: 2.75rem;
+      text-align: left;
+    }
+
+    .steps h2 {
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold-soft);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .steps ol {
+      list-style: none;
+      display: grid;
+      gap: 0.85rem;
+    }
+
+    .steps li {
+      display: grid;
+      grid-template-columns: 2rem 1fr;
+      gap: 0.85rem;
+      align-items: start;
+      font-size: 1rem;
+      line-height: 1.45;
+      color: var(--cream);
+    }
+
+    .steps li span {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 999px;
+      background: rgba(228, 184, 74, 0.16);
+      color: var(--gold-soft);
+      font-size: 0.9rem;
+      font-weight: 800;
+    }
+
+    .tools {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Jornada de IA do Grupo Calpar</p>
+    <h1>Grill Me</h1>
+    <p class="lead">
+      Seu guia para usar inteligência artificial e transformar um problema do dia a dia em um pedido claro para a equipe de TI.
+    </p>
+
+    <a class="download" href="./grill-me.md" download="grill-me.md">
+      Baixar Grill Me
+    </a>
+    <p class="hint">Arquivo pronto para enviar ao ChatGPT, Claude, Gemini e outras IAs.</p>
+
+    <section class="steps" aria-label="Como usar">
+      <h2>Como usar</h2>
+      <ol>
+        <li><span>1</span><div>Baixe o Grill Me nesta página.</div></li>
+        <li><span>2</span><div>Abra sua ferramenta de IA e envie o arquivo (ou cole o conteúdo).</div></li>
+        <li><span>3</span><div>Responda às perguntas com exemplos reais do seu trabalho.</div></li>
+        <li><span>4</span><div>No final, copie o resumo e envie para Sistemas / TI.</div></li>
+      </ol>
+    </section>
+
+    <p class="tools">Simples assim: escaneou, baixou, usou.</p>
+  </main>
+</body>
+</html>
