@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grill Me — QR Code (para vídeo)</title>
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-top: #1a3a2f;
+      --bg-mid: #245544;
+      --bg-bottom: #0f241c;
+      --gold: #e4b84a;
+      --gold-soft: #f3d78a;
+      --cream: #f7f1e3;
+      --text: #f4efe4;
+      --muted: rgba(244, 239, 228, 0.78);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      font-family: "Manrope", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(ellipse 80% 50% at 70% 0%, rgba(228, 184, 74, 0.18), transparent 55%),
+        radial-gradient(ellipse 60% 40% at 10% 90%, rgba(60, 120, 90, 0.35), transparent 50%),
+        linear-gradient(165deg, var(--bg-top), var(--bg-mid) 45%, var(--bg-bottom));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    main {
+      width: min(52rem, 100%);
+      text-align: center;
+    }
+
+    .logo {
+      display: block;
+      width: min(12rem, 45%);
+      height: auto;
+      margin: 0 auto 1.25rem;
+      mix-blend-mode: screen;
+    }
+
+    .eyebrow {
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold-soft);
+      margin-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-family: "Newsreader", Georgia, serif;
+      font-size: clamp(2.75rem, 8vw, 4rem);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.75rem;
+    }
+
+    .lead {
+      font-size: 1.15rem;
+      line-height: 1.5;
+      color: var(--muted);
+      margin-bottom: 1.75rem;
+    }
+
+    .qr-wrap {
+      display: inline-block;
+      padding: 1rem;
+      background: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+    }
+
+    .qr-wrap img {
+      display: block;
+      width: min(22rem, 70vw);
+      height: auto;
+    }
+
+    .cta {
+      margin-top: 1.5rem;
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--gold-soft);
+    }
+
+    .url {
+      margin-top: 0.65rem;
+      font-size: 0.95rem;
+      color: var(--muted);
+      word-break: break-all;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="logo" src="./assets/grupo-calpar-logo.png" alt="Grupo Calpar" width="420" height="120" />
+    <p class="eyebrow">Jornada de IA do Grupo Calpar</p>
+    <h1>Grill Me</h1>
+    <p class="lead">Escaneie o QR Code para baixar o Grill Me</p>
+
+    <div class="qr-wrap">
+      <img
+        src="./assets/qr-grill-me.png"
+        alt="QR Code para baixar o Grill Me"
+        width="900"
+        height="900"
+      />
+    </div>
+
+    <p class="cta">Escaneie · Baixe · Use</p>
+    <p class="url">ticalpar.github.io/jornada-ia/grill-me</p>
+  </main>
+</body>
+</html>
