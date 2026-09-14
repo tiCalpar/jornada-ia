@@ -20,9 +20,9 @@ O funcionário **não** precisa abrir GitHub.
 
 | Caminho | Função |
 |---------|--------|
-| `site/grill-me/index.html` | Página amigável de download |
-| `site/grill-me/grill-me.md` | Arquivo que o botão baixa |
-| `site/index.html` | Redireciona `/` → `/grill-me/` |
+| `docs/grill-me/index.html` | Página amigável de download |
+| `docs/grill-me/grill-me.md` | Arquivo que o botão baixa |
+| `docs/index.html` | Redireciona `/` → `/grill-me/` |
 | `grill-me.md` (raiz) | Cópia de trabalho / espelho do arquivo |
 | `manual-demanda-ia-grill-me.md` | Versão de edição do conteúdo |
 
@@ -30,7 +30,7 @@ O funcionário **não** precisa abrir GitHub.
 
 Repositório: https://github.com/tiCalpar/jornada-ia
 
-Depois de ativar o GitHub Pages (pasta `/site`), a URL pública esperada é:
+Depois de ativar o GitHub Pages (pasta `/docs`), a URL pública esperada é:
 
 ```text
 https://ticalpar.github.io/jornada-ia/grill-me/
@@ -46,20 +46,18 @@ O botão **Baixar Grill Me** já aponta para `./grill-me.md` na mesma pasta da p
 2. Em **Settings → Pages**:
    - Source: Deploy from a branch
    - Branch: `main`
-   - Folder: `/site` (ou `/docs` se preferir mover a pasta)
-3. Se a pasta publicada for `site`, a URL fica:
-   - `https://SEU-USUARIO.github.io/NOME-DO-REPO/grill-me/`
+   - Folder: `/docs` (GitHub Pages só aceita `/` ou `/docs`)
+3. A URL fica:
+   - `https://ticalpar.github.io/jornada-ia/grill-me/`
 4. (Opcional) Configure um **domínio próprio** apontando para o GitHub Pages.
-5. QR Code aponta para o domínio próprio `/grill-me`.
-
-> Se o Pages só publicar a raiz do repo, mova o conteúdo de `site/` para a raiz ou para `/docs` e ajuste a configuração.
+5. QR Code aponta para a URL pública (ou domínio próprio).
 
 ## Atualizar o arquivo sem mudar o QR
 
 1. Edite `manual-demanda-ia-grill-me.md` (conteúdo).
 2. Copie para:
    - `grill-me.md`
-   - `site/grill-me/grill-me.md`
+   - `docs/grill-me/grill-me.md`
 3. Publique/atualize o site.
 4. O mesmo QR continua válido.
 
